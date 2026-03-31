@@ -78,6 +78,15 @@ pip install git+https://github.com/ydg06081/dirsort.git
 > python -m pip install git+https://github.com/ydg06081/dirsort.git
 > ```
 
+**WSL(Windows Subsystem for Linux) 사용 중이라면**
+
+WSL은 Linux 환경이므로 `externally-managed-environment` 오류가 발생할 수 있습니다. pipx를 사용하세요:
+
+```bash
+sudo apt install pipx
+pipx install git+https://github.com/ydg06081/dirsort.git
+```
+
 </details>
 
 <details>

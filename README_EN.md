@@ -78,6 +78,15 @@ pip install git+https://github.com/ydg06081/dirsort.git
 > python -m pip install git+https://github.com/ydg06081/dirsort.git
 > ```
 
+**If you're using WSL (Windows Subsystem for Linux)**
+
+WSL runs as a Linux environment, so you may get an `externally-managed-environment` error. Use pipx instead:
+
+```bash
+sudo apt install pipx
+pipx install git+https://github.com/ydg06081/dirsort.git
+```
+
 </details>
 
 <details>
