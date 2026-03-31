@@ -37,7 +37,7 @@ Tidy up your messy directories.
 ### Install via pip (all platforms)
 
 ```bash
-pip install git+https://github.com/ydg06081/dirsort.git
+pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
 
 After installation, the `dirsort` command is available directly in your terminal.
@@ -52,12 +52,12 @@ After installation, the `dirsort` command is available directly in your terminal
 brew install python
 
 # Install dirsort
-pip3 install git+https://github.com/ydg06081/dirsort.git
+pip3 install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
 
 > If you get `pip3: command not found`, use `python3 -m pip` instead:
 > ```bash
-> python3 -m pip install git+https://github.com/ydg06081/dirsort.git
+> python3 -m pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 > ```
 
 </details>
@@ -70,27 +70,22 @@ pip3 install git+https://github.com/ydg06081/dirsort.git
 # Make sure to check "Add Python to PATH" during installation!
 
 # Run in PowerShell or CMD
-pip install git+https://github.com/ydg06081/dirsort.git
+pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
 
 > If `pip` doesn't work:
 > ```powershell
-> python -m pip install git+https://github.com/ydg06081/dirsort.git
+> python -m pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 > ```
 
 **If you're using WSL (Windows Subsystem for Linux)**
 
-WSL runs as a Linux environment, so you may get an `externally-managed-environment` error. Use pipx instead:
-
-```bash
-sudo apt install pipx
-pipx install git+https://github.com/ydg06081/dirsort.git
-```
+WSL runs as a Linux environment — follow the Linux instructions below.
 
 </details>
 
 <details>
-<summary><b>Linux (Ubuntu/Debian)</b></summary>
+<summary><b>Linux / WSL (Ubuntu/Debian)</b></summary>
 
 ```bash
 # Install Python and pip
@@ -98,21 +93,15 @@ sudo apt update
 sudo apt install python3 python3-pip
 
 # Install dirsort
-pip3 install git+https://github.com/ydg06081/dirsort.git
+pip3 install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
-
-> If you get an `externally-managed-environment` error, use pipx:
-> ```bash
-> sudo apt install pipx
-> pipx install git+https://github.com/ydg06081/dirsort.git
-> ```
 
 </details>
 
 ### Update
 
 ```bash
-pip install --upgrade git+https://github.com/ydg06081/dirsort.git
+pip install --upgrade git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
 
 ### Uninstall

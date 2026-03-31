@@ -37,7 +37,7 @@
 ### pip으로 설치 (모든 OS 공통)
 
 ```bash
-pip install git+https://github.com/ydg06081/dirsort.git
+pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
 
 설치 후 터미널에서 바로 `dirsort` 명령어를 사용할 수 있습니다.
@@ -52,12 +52,12 @@ pip install git+https://github.com/ydg06081/dirsort.git
 brew install python
 
 # dirsort 설치
-pip3 install git+https://github.com/ydg06081/dirsort.git
+pip3 install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
 
 > `pip3: command not found` 오류가 나면 `python3 -m pip` 으로 대체하세요:
 > ```bash
-> python3 -m pip install git+https://github.com/ydg06081/dirsort.git
+> python3 -m pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 > ```
 
 </details>
@@ -70,27 +70,22 @@ pip3 install git+https://github.com/ydg06081/dirsort.git
 # 설치 시 "Add Python to PATH" 체크 필수!
 
 # PowerShell 또는 CMD에서 실행
-pip install git+https://github.com/ydg06081/dirsort.git
+pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
 
 > `pip`이 안 되면:
 > ```powershell
-> python -m pip install git+https://github.com/ydg06081/dirsort.git
+> python -m pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 > ```
 
 **WSL(Windows Subsystem for Linux) 사용 중이라면**
 
-WSL은 Linux 환경이므로 `externally-managed-environment` 오류가 발생할 수 있습니다. pipx를 사용하세요:
-
-```bash
-sudo apt install pipx
-pipx install git+https://github.com/ydg06081/dirsort.git
-```
+WSL은 Linux 환경이므로 아래 Linux 안내를 따르세요.
 
 </details>
 
 <details>
-<summary><b>Linux (Ubuntu/Debian)</b></summary>
+<summary><b>Linux / WSL (Ubuntu/Debian)</b></summary>
 
 ```bash
 # Python과 pip 설치
@@ -98,21 +93,15 @@ sudo apt update
 sudo apt install python3 python3-pip
 
 # dirsort 설치
-pip3 install git+https://github.com/ydg06081/dirsort.git
+pip3 install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
-
-> `externally-managed-environment` 오류가 나면 pipx를 사용하세요:
-> ```bash
-> sudo apt install pipx
-> pipx install git+https://github.com/ydg06081/dirsort.git
-> ```
 
 </details>
 
 ### 업데이트
 
 ```bash
-pip install --upgrade git+https://github.com/ydg06081/dirsort.git
+pip install --upgrade git+https://github.com/ydg06081/dirsort.git --break-system-packages
 ```
 
 ### 제거
