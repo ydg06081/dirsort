@@ -1,6 +1,6 @@
 # dirsort
 
-**English** | [한국어](README.md)
+[한국어](README.md) | **English**
 
 A CLI tool that automatically organizes files by extension.
 

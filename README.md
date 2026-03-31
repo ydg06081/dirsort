@@ -1,6 +1,6 @@
 # dirsort
 
-[English](README_EN.md) | **한국어**
+**한국어** | [English](README_EN.md)
 
 디렉토리 내 파일을 확장자별로 자동 분류하는 CLI 도구.
 
