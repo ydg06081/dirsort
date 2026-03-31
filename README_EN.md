@@ -1,19 +1,19 @@
 # dirsort
 
-[English](README_EN.md) | **한국어**
+**English** | [한국어](README.md)
 
-디렉토리 내 파일을 확장자별로 자동 분류하는 CLI 도구.
+A CLI tool that automatically organizes files by extension.
 
-최상위 파일만 정리하며, 하위 디렉토리는 건드리지 않습니다.
+Only organizes top-level files — subdirectories are left untouched.
 
-자신의 상황에 맞게 마음껏 수정해서 사용하세요.
+Feel free to modify it to suit your needs.
 
-당신의 어지러운 디렉토리를 정리합니다.
+Tidy up your messy directories.
 
-## 카테고리
+## Categories
 
-| 폴더 | 확장자 |
-|------|--------|
+| Folder | Extensions |
+|--------|-----------|
 | `00_pdf` | `.pdf` |
 | `01_image` | `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.tif`, `.tiff`, `.webp`, `.heic`, `.heif` |
 | `02_doc` | `.hwp`, `.hwpx`, `.doc`, `.docx`, `.txt`, `.rtf`, `.odt` |
@@ -27,35 +27,35 @@
 | `10_code` | `.py`, `.js`, `.ts`, `.java`, `.c`, `.cpp`, `.html`, `.css`, `.json`, `.xml`, `.yaml`, `.yml` |
 | `11_executable` | `.exe`, `.dmg`, `.pkg`, `.deb`, `.msi`, `.app` |
 
-## 설치
+## Installation
 
-### 요구사항
+### Requirements
 
-- Python 3.9 이상
-- pip (Python 패키지 관리자)
+- Python 3.9 or higher
+- pip (Python package manager)
 
-### pip으로 설치 (모든 OS 공통)
+### Install via pip (all platforms)
 
 ```bash
 pip install git+https://github.com/ydg06081/dirsort.git
 ```
 
-설치 후 터미널에서 바로 `dirsort` 명령어를 사용할 수 있습니다.
+After installation, the `dirsort` command is available directly in your terminal.
 
-### OS별 상세 안내
+### OS-specific instructions
 
 <details>
 <summary><b>macOS</b></summary>
 
 ```bash
-# Python이 없다면 Homebrew로 설치
+# Install Python via Homebrew if not already installed
 brew install python
 
-# dirsort 설치
+# Install dirsort
 pip3 install git+https://github.com/ydg06081/dirsort.git
 ```
 
-> `pip3: command not found` 오류가 나면 `python3 -m pip` 으로 대체하세요:
+> If you get `pip3: command not found`, use `python3 -m pip` instead:
 > ```bash
 > python3 -m pip install git+https://github.com/ydg06081/dirsort.git
 > ```
@@ -66,14 +66,14 @@ pip3 install git+https://github.com/ydg06081/dirsort.git
 <summary><b>Windows</b></summary>
 
 ```powershell
-# Python이 없다면 https://www.python.org/downloads/ 에서 설치
-# 설치 시 "Add Python to PATH" 체크 필수!
+# Install Python from https://www.python.org/downloads/
+# Make sure to check "Add Python to PATH" during installation!
 
-# PowerShell 또는 CMD에서 실행
+# Run in PowerShell or CMD
 pip install git+https://github.com/ydg06081/dirsort.git
 ```
 
-> `pip`이 안 되면:
+> If `pip` doesn't work:
 > ```powershell
 > python -m pip install git+https://github.com/ydg06081/dirsort.git
 > ```
@@ -84,15 +84,15 @@ pip install git+https://github.com/ydg06081/dirsort.git
 <summary><b>Linux (Ubuntu/Debian)</b></summary>
 
 ```bash
-# Python과 pip 설치
+# Install Python and pip
 sudo apt update
 sudo apt install python3 python3-pip
 
-# dirsort 설치
+# Install dirsort
 pip3 install git+https://github.com/ydg06081/dirsort.git
 ```
 
-> `externally-managed-environment` 오류가 나면 pipx를 사용하세요:
+> If you get an `externally-managed-environment` error, use pipx:
 > ```bash
 > sudo apt install pipx
 > pipx install git+https://github.com/ydg06081/dirsort.git
@@ -100,27 +100,27 @@ pip3 install git+https://github.com/ydg06081/dirsort.git
 
 </details>
 
-### 업데이트
+### Update
 
 ```bash
 pip install --upgrade git+https://github.com/ydg06081/dirsort.git
 ```
 
-### 제거
+### Uninstall
 
 ```bash
 pip uninstall dirsort
 ```
 
-## 사용법
+## Usage
 
 ```bash
-# 현재 디렉토리 정리
+# Organize the current directory
 dirsort
 
-# 특정 디렉토리 정리
+# Organize a specific directory
 dirsort ~/Downloads
 
-# 미리보기 (실제 이동 없음)
+# Preview changes without moving files
 dirsort --dry-run
 ```
