@@ -42,6 +42,19 @@ pip install git+https://github.com/ydg06081/dirsort.git --break-system-packages
 
 설치 후 터미널에서 바로 `dirsort` 명령어를 사용할 수 있습니다.
 
+## 사용법
+
+```bash
+# 현재 디렉토리 정리
+dirsort
+
+# 특정 디렉토리 정리
+dirsort ~/Downloads
+
+# 미리보기 (실제 이동 없음)
+dirsort --dry-run
+```
+
 ### OS별 상세 안내
 
 <details>
@@ -110,15 +123,4 @@ pip install --upgrade git+https://github.com/ydg06081/dirsort.git --break-system
 pip uninstall dirsort
 ```
 
-## 사용법
 
-```bash
-# 현재 디렉토리 정리
-dirsort
-
-# 특정 디렉토리 정리
-dirsort ~/Downloads
-
-# 미리보기 (실제 이동 없음)
-dirsort --dry-run
-```
